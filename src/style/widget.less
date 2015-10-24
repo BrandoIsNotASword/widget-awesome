@@ -1,3 +1,51 @@
-.Header {
-  color: #e01010;
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500);
+
+@bold: 700;
+@medium: 500;
+@normal: 400;
+
+@button_color: #FF000B;
+
+html,
+body,
+body > div {
+  height: 100%;
+  font-size: 14px;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.widget-awesome {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Like {
+  width: 100px;
+  background-color: @button_color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+
+  &:hover {
+    background-color: @button_color - 30;
+    cursor: pointer;
+  }
+
+  .Like__text {
+    color: white;
+    font-weight: @bold;
+  }
+
+}
+
+.Like--clicked {
+  opacity: 0.75;
+  background-color: @button_color - 30;
+  
+  &:hover {
+    cursor: default;
+  }
 }
