@@ -1,14 +1,10 @@
 var React = require('react')
-var Header = require('./Header.jsx')
+var Like = require('./Like.jsx')
 
 module.exports = React.createClass({
   'displayName': 'BlankPage.jsx',
-  render: function () {
-    var title = 'This page is under construction hey'
 
-    var header = <Header title={title} />
-    return (<div className='Page'>
-      {header}
-    </div>)
+  render: function () {
+    return <Like />
   }
 })
